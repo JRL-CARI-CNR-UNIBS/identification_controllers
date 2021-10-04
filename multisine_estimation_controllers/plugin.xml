@@ -1,0 +1,8 @@
+<library path="lib/libmultisine_estimation_controllers">
+  <class name="cnr/control/MultisineIdentificationController" type="cnr::control::MultisineIdentificationController" base_class_type="controller_interface::ControllerBase">
+    <description>
+      MultisineIdentificationController
+    </description>
+  </class>
+</library>
+
