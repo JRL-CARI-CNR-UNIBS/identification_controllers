@@ -16,6 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
   std_msgs
+  frequency_identification
 )
 find_package(Eigen3 3.3 REQUIRED NO_MODULE)
 
@@ -28,7 +29,7 @@ endif()
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES multisine_estimation_controllers
-  CATKIN_DEPENDS cnr_controller_interface cnr_hardware_interface joint_limits_interface name_sorting roscpp sensor_msgs std_msgs
+  CATKIN_DEPENDS cnr_controller_interface cnr_hardware_interface joint_limits_interface name_sorting roscpp sensor_msgs std_msgs frequency_identification
   DEPENDS EIGEN3
 )
 

@@ -11,7 +11,7 @@
 
 #include <subscription_notifier/subscription_notifier.h>
 #include <cnr_controller_interface/cnr_joint_command_controller_interface.h>
-
+#include <frequency_identification/frequency_identification.h>
 namespace cnr
 {
 namespace control
@@ -33,13 +33,7 @@ public:
 protected:
 
 
-  double m_carrier_frequency;
-  double m_carrier_amplitude;
-  double m_carrier_periods;
-  double m_test_time;
-  double m_warmup_time=5.0;
-  std::map<double,std::pair<double,double>> m_harmonic_numbers;
-
+  identification::MultiSineEstimatorPtr m_mse;
   std::string m_active_joint;
   int m_active_joint_idx;
   double m_warming_time;
