@@ -28,7 +28,7 @@ freq_est:
   carrier:
     angular_frequency: 0.5       # [rad/s]            angular frequency
     amplitude: 0.1               # [rad or m]         amplitude of the carrier
-    periods:   2.0               # [-]                number of repetitions of the carriers (round using std::ceil)
+    periods:   2.0               # [-]                number of repetitions of the carrier (round using std::ceil)
 
   input:
     max_pos: 0.05                # [rad     or m]     maximum amplitude of the signal in position (deflection from the starting point)
